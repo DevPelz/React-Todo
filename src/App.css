@@ -1,0 +1,116 @@
+body{
+  background-color: #333;
+  color: #fff;
+}
+
+.App{
+  text-align: center;
+}
+
+.taskBg {
+  background-color: #555;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  padding: 10px, 140px 10px 15px;
+  text-align: left;
+  font-size: 22px;
+  position: relative;
+}
+
+.taskBg div {
+  display: flex;
+  align-items: center;
+}
+
+.taskNumber{
+  color: #999;
+  border: 1px solid #999;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  text-align: center;
+  font-size: 14px;
+  margin-right: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.taskBg .taskText{
+  flex: 1;
+}
+
+.taskBg .done .taskText{
+ text-decoration: line-through;
+ opacity: 0.3;
+}
+
+.iconsWrap{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  width: auto;
+  display: inline-block;
+}
+
+.taskBg .iconsWrap span {
+  display: inline-block;
+  margin: 0px 10px 0px 10px;
+  cursor: pointer;
+  color: #00ff89;
+}
+
+.taskBg .iconsWrap span:hover {
+  color: yellow;
+}
+
+.mr-20{
+  margin-right: 20px;
+}
+
+.tabs:not(:last-child){
+  border-right: 1px solid rgba(0,0,0, 0.274);
+}
+
+.active-tabs{
+  background: #333;
+  border-bottom:1px solid transparent ;
+}
+
+.active-tabs::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% + 2px);
+  height: 5px;
+  background: #555;
+}
+
+.active-content{
+  display: block;
+}
+
+.container{
+  padding: 2rem;
+}
+
+.bloc-tabs{
+  display: flex;
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+.tabs{
+  padding: 0.5rem 3rem;
+  border-radius: 2rem;
+  background-color: #999;
+}
+
+.tabs:hover{
+  background-color: #00ff89;
+  color: #333;
+}
