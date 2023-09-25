@@ -10,9 +10,11 @@ const UpdateForm = ({ updateData, changeTask, updateTask, cancelUpdate }) => {
           />
         </div>
         <div className="col-auto">
+          {/* {updateData === "" } */}
           <button
-            onClick={updateData.value > 0 ? updateTask : cancelUpdate}
+            onClick={updateTask}
             className="btn btn-lg btn-success mr-20"
+            disabled={updateData.title === ""}
           >
             Update
           </button>
