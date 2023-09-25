@@ -10,7 +10,10 @@ const UpdateForm = ({ updateData, changeTask, updateTask, cancelUpdate }) => {
           />
         </div>
         <div className="col-auto">
-          <button onClick={updateTask} className="btn btn-lg btn-success mr-20">
+          <button
+            onClick={updateData.value > 0 ? updateTask : cancelUpdate}
+            className="btn btn-lg btn-success mr-20"
+          >
             Update
           </button>
           <button onClick={cancelUpdate} className="btn btn-lg btn-warning">
